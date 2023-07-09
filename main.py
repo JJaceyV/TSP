@@ -129,7 +129,7 @@ class Core(QMainWindow, Ui_MainWindow):
                         while self.isRunning == True:
                             await asyncio.sleep(sa.delay)
                             sa.isRunning = self.isRunning
-                        sa.isRunning == False
+                        sa.isRunning = False
                     # Task 2: Cập nhật đồ thị
                     async def update_plot():
                         while self.isRunning == True:
